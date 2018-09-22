@@ -33,14 +33,14 @@ html, body {
 }
 h1,h4 {
   text-align: center;
-  color: rgb(38, 156, 131)
+  color: rgb(32, 85, 129)
 }
 body {
-  background-color: rgb(158, 255, 231)
+  background-color: rgb(160, 203, 222)
 }
 .footer
 {
-    background-color:rgb(38, 156, 131);
+    background-color:rgb(32, 85, 129);
     position: relative;
     width: 100%;
     clear:both;
@@ -69,7 +69,7 @@ ul.nav a:hover {
   margin-right:10px;
 }
 .navbar, .navbar-nav, .navbar-header {
-  background-color:rgb(38, 156, 131)
+  background-color:rgb(32, 85, 129)
 }
 .icon-bar {
   background-color:white;
