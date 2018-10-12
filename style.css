@@ -1,4 +1,9 @@
-/* STYLING FOR IMAGES */
+/* FONT */
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* STYLING FOR IMAGES & BUTTONS*/
 .imgbox {
  display: grid;
  height: 100%; 
@@ -10,15 +15,21 @@
 img.float_text_left {
   float: left;
   clear: none;
-  padding: 15px;
-  max-width: 20%;
-  max-height: 20%;
+  padding-top: 0px;
+  padding-right: 20px;
+  max-width: 25%;
+  max-height: 25%;
   position: relative;
 }
 
 /* STYLING FOR TAGS */
 p {
-  font-size: 125%;
+  font-size: 20px;
+  text-align: center;
+}
+
+li {
+  font-size: 18px;
 }
 
 html, body {
@@ -35,11 +46,12 @@ h1,h4 {
   color: rgb(32, 85, 129)
 }
 body {
-  background-color: rgb(160, 203, 222)
+  background-color: white/*rgb(160, 203, 222)*/
 }
 .footer
 {
-    background-color:rgb(32, 85, 129);
+    /* background-color:rgb(32, 85, 129); */
+    background-color:black;
     position: relative;
     width: 100%;
     clear:both;
@@ -65,12 +77,117 @@ ul.nav a:hover {
   padding-left:auto;
   padding-right:10px;
   margin-left:auto;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
   margin-right:10px;
 }
 .navbar, .navbar-nav, .navbar-header {
-  background-color:rgb(32, 85, 129)
+  /* background-color:rgb(32, 85, 129); */
+  background-color:black;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .icon-bar {
   background-color:white;
   color: white;
+}
+
+/* STYLING FOR THE PARALLAX */
+.hero {
+  position: relative;
+  height: 500px;
+  padding: 20px;
+  margin: 0;
+  background: black;
+  background-image: url("img/data.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero h1 {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 100px;
+  animation: title 1.2s forwards linear;
+}
+
+.hero p {
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  font-size: 250%;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+}
+
+/* styling for font awesome icons */
+
+.fas, .fa {
+  display: inline-block;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.btn-circle, .js-scroll-trigger{
+  color:white;
+  align-content: center;
+  text-align: center;
+  font-size: 36px;
+}
+.btn-circle:hover, .js-scroll-trigger:hover{
+  color:white;
+  text-decoration: none;
+}
+
+.button {
+  background-color: rgb(32, 85, 129);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color:rgb(32, 85, 129);
+  text-decoration: none;
+  color: white;
+}
+
+/* keyframe animations which will be used to animate the title */
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 7.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes smaller-title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 5.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes subtitle {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
