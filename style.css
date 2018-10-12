@@ -4,7 +4,7 @@
 }
 
 /* STYLING FOR IMAGES & BUTTONS*/
-.imgbox {
+/* .imgbox {
  display: grid;
  height: auto; 
 }
@@ -14,6 +14,10 @@
   text-align: center;
   width: 300px;
   vertical-align: middle;
+} */
+
+.img-responsive {
+  margin: 0 auto;
 }
 
 img.float_text_left {
@@ -114,7 +118,7 @@ ul.nav a:hover {
 .hero h1 {
   margin-top: 20px;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 0.1em;
   animation: title 1.2s forwards linear;
 }
 
