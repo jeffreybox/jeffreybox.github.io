@@ -118,7 +118,7 @@ ul.nav a:hover {
 .hero h1 {
   margin-top: 20px;
   font-weight: bold;
-  font-size: 0.1em;
+  font-size: 100%;
   animation: title 1.2s forwards linear;
 }
 
