@@ -9,10 +9,12 @@
  height: auto; 
 }
 .center-fit {
-  max-width: 100%;
-  max-height: 100%;
+  display: table-cell;
+  height: 300px;
+  text-align: center;
+  width: 300px;
   vertical-align: middle;
- }
+}
 
 img.float_text_left {
   float: left;
