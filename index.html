@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- d3 JavaScript -->
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <!-- My personal stylesheet -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -57,15 +58,26 @@
     <div class="container" id="summary">
         <div class="row">
             <div class="col-md-12">
-                <h1>"In God we trust. All others must bring data."</h1>
+                <h1>"In God we trust. <br>All others must bring data."</h1>
                 <p>  ~ W. Edwards Deming ~</p>
                 <hr>
                 <p>
-                Our world is overrun by data.
-                Every day, the earth creates 2.5 quintillion bytes of data. (Forbes; Schmidt). 
-                Most industries leverage this information for value; however, Healthcare lags. 
-                Healthcare, an industry responsible for not only our well-being but ~20% of our GDP, is in dire need of Data Scientists. 
-                With a decade of experience, I use Data Science to help Healthcare organizations improve quality, safety, processes, and decision-making.
+                Our world is overrun by data.<br>
+                Every day, the world creates<br> 
+                2.5 quintillion bytes of data:<br><br></p> 
+                <div id="shiva" style="text-align: center; font-size: 48px"><span class="count">2500000000000000000</span></div>
+                <!-- <div class="numscroller numscroller-big-bottom roller-title-number-4 scrollzip isShown" data-slno="4" data-min="0" data-max="2500000000000000000" data-delay="5" data-increment="9876543">2500000000000000000</div> -->
+                <br><br>
+                <p>
+                Most industries dig in;<br>
+                Healthcare lags.<br> 
+                It's not just 20% of US GDP;<br>
+                Healthcare is a matter of life and death.<br>
+                I use Data Science to improve: <br><br>
+                    <strong>QUALITY,</strong><br>
+                    <strong>SAFETY,</strong><br>
+                    <strong>PROCESSES, &</strong><br>
+                    <strong>DECISION-MAKING.</strong>
                 <br><br>
                     <a href="about.html" class="button">ABOUT</a>    
                 </p>
@@ -78,7 +90,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>“The ancestor of every action is a thought.”</h1>
+                <h1>“The ancestor of every action<br> is a thought.”</h1>
                 <p>  ~ Ralph Waldo Emerson ~</p>
                 <hr></hr>
             </div>
@@ -89,14 +101,14 @@
             <br> 
             <div class="col-md-4">
                 <h4><strong>LEADING CAUSES OF DEATH</strong></h4>
-                <p align="center">CDC & NCHS data visualized on Heroku</p>
+                <p align="center">CDC & NCHS data visualized</p>
                 <div class ="imgbox">
                     <a href="https://leading-causes-of-death.herokuapp.com/"><img class = "img-responsive" src = "img/leadingcauses.png"></a>
                 </div><br/>  
             </div>
             <div class="col-md-4">
                 <h4><strong>PYTHON SENTIMENT ANALYSIS</strong></h4>
-                <p align="center">Billboard Top-100 over time</p>
+                <p align="center">Billboard Top-100</p>
                 <div class ="imgbox">
                     <a href="https://jeffreybox.github.io/Lyrics_Analyzer/index.html"><img class = "img-responsive" src = "img/lyricanalysis.png"></a>
                 </div><br/>
@@ -108,18 +120,18 @@
                     <a href="https://jeffreybox.github.io/d3/"><img class = "img-responsive" src = "img/d3health.png"></a>
                 </div><br/>
             </div>
-            <div class="col-md-4">
+        </div>
+        <div class = "row">
+        <div class="col-md-4">
                 <h4><strong>LEAFLET GEOMAPPING</strong></h4>
-                <p align="center">Mapbox-based GeoJSON of quakes</p>
+                <p align="center">Mapbox GeoJSON quakes</p>
                 <div class ="imgbox">
                     <a href="https://jeffreybox.github.io/geomapping/"><img class = "img-responsive" src = "img/geomap.png"></a>
                 </div><br/>
             </div>
-        </div>
-        <div class = "row">
             <div class="col-md-4">
                 <h4><strong>MONGO WEB SCRAPING</strong></h4>
-                <p align="center">Splinter's chromedriver and MongoDB on Mars</p>
+                <p align="center">Splinter on Mars</p>
                 <div class ="imgbox">
                     <a href="https://jeffreybox.github.io/web_scraping/"><img class = "img-responsive" src = "img/webscraper.png"></a>
                 </div><br/>  
@@ -128,7 +140,7 @@
                 <h4><strong>GT FINAL PROJECT</strong></h4>
                 <p align="center">Forthcoming</p>
                 <div class ="imgbox">
-                    <a href="#"><img class = "img-responsive" src = "img/logo.png"></a>
+                    <a href="#"><img class = "img-responsive" src = "img/logo2.png"></a>
                 </div><br/>  
             </div>
         </div>
@@ -139,7 +151,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>"To make knowledge productive, <br/>we will have to learn to see both forest and tree. <br/>We will have to learn how to connect"</h1>
+                <h1>"To make knowledge productive, <br/>we will have to learn <br>to see both forest and tree. <br/>We will have to learn how to connect"</h1>
                 <p>  ~ Peter Drucker ~</p>
                 <hr>
                 <p>
@@ -187,9 +199,10 @@
 
 <!-- THE FOLLOWING IS REQUIRED FOR BOOTSTRAP INTERACTIVE COMPONENTS -EX- DROPDOWNS. RECOMMENDED BOTTOM PLACEMENT FOR FASTER LOAD TIME-->
 
-    <!-- jQuery Bootstrap's JavaScript plugins -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- jQuery Bootstrap's JavaScript plugins -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="logic.js"></script>    
     </body>
 </html>
